@@ -12,12 +12,16 @@ body {
 
 table {
     border-collapse: collapse;
-    width: 100%;
+    /* 1. Faz a tabela ocupar apenas o espaço necessário, sem esticar */
+    width: auto; 
+    /* Opcional: centraliza a tabela na tela. Se preferir na esquerda, remova a linha abaixo */
+    margin: 0 auto; 
 }
 
 th, td {
     border: 1px solid #ccc;
-    padding: 10px;
+    /* 2. Reduz o espaço interno (6px em cima/baixo e 12px nas laterais) */
+    padding: 6px 12px;
     text-align: center;
 }
 
@@ -29,12 +33,16 @@ a {
     color: blue;
     text-decoration: none;
 }
+
+a:hover {
+    text-decoration: underline;
+}
 </style>
 </head>
 
 <body>
 
-<h1>CVRPN Results: Testes</h1>
+<h1 style="text-align: center;">CVRPN Results: Testes</h1>
 
 <table>
 <thead>
@@ -43,7 +51,7 @@ a {
         <th colspan="3">Solution</th>
     </tr>
     <tr>
-        <th>TD</th>
+        <th>Total Distance</th>
         <th>File</th>
         <th>Figure</th>
     </tr>
@@ -53,19 +61,20 @@ a {
     <tr>
         <td><a href="Instance/F-n45-k4.dat">F-n45-k4.dat</a></td>
         <td>123456</td>
+        <td><a href="solutions/F-n45-k4.txt">F-n45-k4.txt</a></td>
         <td><a href="solutions/F-n45-k4.pdf">F-n45-k4.pdf</a></td>
-        <td>-</td> </tr>
+    </tr>
     <tr>
         <td><a href="Instance/F-n72-k4.dat">F-n72-k4.dat</a></td>
         <td>123456</td>
+        <td><a href="solutions/F-n72-k4.txt">F-n72-k4.txt</a></td>
         <td><a href="solutions/F-n72-k4.pdf">F-n72-k4.pdf</a></td>
-        <td>-</td>
     </tr>   
     <tr>
         <td><a href="Instance/F-n135-k7.dat">F-n135-k7.dat</a></td>
         <td>123456</td>
+        <td><a href="solutions/F-n135-k7.txt">F-n135-k7.txt</a></td>
         <td><a href="solutions/F-n135-k7.pdf">F-n135-k7.pdf</a></td>
-        <td>-</td>
     </tr>  
 </tbody>
 </table>
