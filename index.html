@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
@@ -315,6 +315,85 @@ a:hover {
     
 </tbody>
 </table>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CVRPN Results</title>
+<style>
+    body { font-family: Arial; margin: 40px; }
+    table { border-collapse: separate; border-spacing: 0; width: 80%; margin: 0 auto; border-left: 1px solid #ccc; border-top: 1px solid #ccc; }
+    th, td { border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 3px 12px; text-align: center; vertical-align: middle; }
+    th { background: #f2f2f2; }
+    tbody tr:nth-of-type(even) { background-color: #f9f9f9; }
+    .txt-vertical { writing-mode: vertical-rl; transform: rotate(180deg); font-weight: bold; font-size: 13px; background: #fafafa; padding: 10px 4px; white-space: nowrap; width: 1px; }
+    .linha-separadora { background-color: transparent !important; }
+    .linha-separadora td { border: none; }
+    a { color: blue; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<h1 style="text-align: center;">CVRPN Results: Testes</h1>
+
+<table>
+<thead>
+    <tr>
+        <th rowspan="2" colspan="2">Instance</th>
+        <th colspan="3">Solution</th>
+    </tr>
+    <tr>
+        <th>Total Distance</th>
+        <th>File</th>
+        <th>Figure</th>
+    </tr>
+</thead>
+
+<tbody id="tabela-resultados">
+    </tbody>
+</table>
+
+<script>
+// 1. Cadastre seus dados aqui de forma simples (pode ir adicionando quantos quiser)
+const dadosSetM = [
+    { nome: "M-n101-k10", distancia: "746.617" },
+    { nome: "M-n121-k7",  distancia: "949.357" },
+    { nome: "M-n151-k12", distancia: "943.944" },
+    { nome: "M-n200-k16", distancia: "1,195.819" },
+    { nome: "M-n200-k17", distancia: "1,209.640" }
+];
+
+const tbody = document.getElementById("tabela-resultados");
+const totalInstancias = dadosSetM.length;
+
+// Linha separadora inicial
+let html = `<tr style="height: 4px;" class="linha-separadora"><td colspan="5"></td></tr>`;
+
+// 2. O Loop que você queria que monta o HTML automaticamente
+dadosSetM.forEach((instancia, index) => {
+    html += `<tr>`;
+    
+    // Se for a primeira linha, ele cria a célula vertical com o rowspan calculado sozinho
+    if (index === 0) {
+        html += `<td rowspan="${totalInstancias}" class="txt-vertical">Set M</td>`;
+    }
+    
+    html += `
+        <td><a href="Instance/Set_M/${instancia.nome}.txt">${instancia.nome}.dat</a></td>
+        <td>${instancia.distancia}</td>
+        <td><a href="Solutions/Set_M/Files/${instancia.nome}.txt">${instancia.nome}.txt</a></td>
+        <td><a href="Solutions/Set_M/Figures/${instancia.nome}.pdf">${instancia.nome}.pdf</a></td>
+    </tr>`;
+});
+
+// Coloca todo o bloco gerado dentro da tabela
+tbody.innerHTML = html;
+</script>
 
 </body>
 </html>
