@@ -61,14 +61,23 @@ a:hover {
     width: 1px;
     white-space: nowrap;
 } */
-.txt-vertical {
+/* .txt-vertical {
     writing-mode: vertical-rl;
     font-weight: bold;
     font-size: 13px;
     background: #fafafa;
     padding: 10px 6px;
     text-align: center;
-}
+} */
+.txt-vertical {
+    writing-mode: vertical-lr; /* <--- Mudou de rl para lr */
+    direction: rtl;            /* <--- Adicione isso para inverter o sentido */
+    font-weight: bold;
+    font-size: 13px;
+    background: #fafafa;
+    padding: 10px 6px;
+    text-align: center;
+}    
 </style>
 </head>
 
