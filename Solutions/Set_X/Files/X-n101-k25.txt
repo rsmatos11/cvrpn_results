@@ -3,182 +3,182 @@
  RouteID =            1
  Route number of clients =            7
  Route length =    1279.9001407018786     
- Route demmand =          202
+ Route demand =          202
  Sequence =           34          64          96          26          48          47          38
  Visit points =    584.25742549919266        575.96764648616454        648.08810225981540        543.06143314261396        707.79166488251394        536.98208906281218        838.76495187670525        553.72180303453467        883.22261814077160        500.12848574628549        934.66732019167330        587.14927025360601        844.57743917605876        663.98438602600640     
 
  RouteID =            2
  Route number of clients =            6
  Route length =    828.40868784411066     
- Route demmand =          201
+ Route demand =          201
  Sequence =           32          24          95          73          53          33
  Visit points =    213.59436482333939        724.16854337692132        203.91079550414437        709.67832324916469        97.863815928618095        836.69490628617802        42.714539342065599        896.37447608919047        95.721103545942967        904.65086885803498        124.49779578139429        909.14403326334718     
 
  RouteID =            3
  Route number of clients =            4
  Route length =    632.65799985945273     
- Route demmand =          184
+ Route demand =          184
  Sequence =           79          11          85          30
  Visit points =    420.02304728334400        825.01576069037094        469.19793164135359        946.57499146820498        421.48592429245633        977.86299511877598        400.00597002075995        945.68382477087346     
 
  RouteID =            4
  Route number of clients =            3
  Route length =    1311.6706957754845     
- Route demmand =          189
+ Route demand =          189
  Sequence =           74          13           4
  Visit points =    361.69001556207473        47.773807538665963        392.79185473551581        75.030909575458949        445.96617004233701        257.90241692779773     
 
  RouteID =            5
  Route number of clients =            3
  Route length =    556.40068787726841     
- Route demmand =          202
+ Route demand =          202
  Sequence =           58          12           5
  Visit points =    474.95558954234338        510.41101485250363        420.31685155264347        482.90693581358289        313.11710098340330        527.90327592702738     
 
  RouteID =            6
  Route number of clients =            3
  Route length =    1307.9072995660395     
- Route demmand =          203
+ Route demand =          203
  Sequence =           92           9          86
  Visit points =    260.90668717691420        98.212734414327187        253.32805939896596        55.199819747702570        213.38103998354933        126.06871036794178     
 
  RouteID =            7
  Route number of clients =            8
  Route length =    1909.6928756067812     
- Route demmand =          206
+ Route demand =          206
  Sequence =            7           2          45          43          29          36          57          72
  Visit points =    644.76239424291805        98.177780982332436        797.56725912228228        17.303836779729927        936.65898980549866        34.709852855575583        968.72459830240155        176.98167263386159        927.71091721683115        185.88840220307537        925.60969545610055        186.34471369456838        730.63569738174101        361.39258056434079        718.11305366831016        372.61279516823942     
 
  RouteID =            8
  Route number of clients =            5
  Route length =    1119.9396515657386     
- Route demmand =          205
+ Route demand =          205
  Sequence =           25          65          78          42          28
  Visit points =    627.85686973943314        307.55782294014813        660.63449463844620        272.15200494008553        691.00980033992175        239.34113018402309        688.00000000000000        274.00000000000000        663.51529001824917        335.93862317341785     
 
  RouteID =           9
  Route number of clients =            3
  Route length =    942.20841418280816     
- Route demmand =          206
+ Route demand =          206
  Sequence =           39          10          18
  Visit points =    594.58134876793383        320.82082568797750        602.51827664193695        308.09238948483289        466.76733582791638        354.16523164978787     
 
  RouteID =           10
  Route number of clients =            2
  Route length =    692.60361044074523     
- Route demmand =          176
+ Route demand =          176
  Sequence =           75          93
  Visit points =    259.48423675481246        939.41236068367255        186.55409607253202        977.01514799336394     
 
  RouteID =           11
  Route number of clients =            4
  Route length =    805.88342046410685     
- Route demmand =          205
+ Route demand =          205
  Sequence =           15          22          41          20
  Visit points =    190.37556502304318        475.15189750048563        134.12504656025351        445.78292017722100        97.987564300960159        444.62897165150088        56.500562525739674        497.01372803980104     
 
  RouteID =           12
  Route number of clients =            5
  Route length =    1427.2230330325310     
- Route demmand =          203
+ Route demand =          203
  Sequence =           89          98          99          62          71
  Visit points =    980.58082162673259        815.51407676100291        970.97215966828344        868.83517912838556        942.96193007826639        942.39528949560054        917.48156035453587        964.14163192794751        882.69978311404236        980.30618478737392     
 
  RouteID =           13
  Route number of clients =            4
  Route length =    712.85054746002959     
- Route demmand =          204
+ Route demand =          204
  Sequence =           21          56          94          80
  Visit points =    573.58580038383298        726.61827277795294        673.28165391479433        615.94570943861686        673.94549763455132        594.41985121699201        590.36699554070219        588.79361171441280     
 
  RouteID =           14
  Route number of clients =            5
  Route length =    1535.7210571882540     
- Route demmand =          206
+ Route demand =          206
  Sequence =           87           6          37          49          14
  Visit points =    789.28481197530903        399.33076943893326        816.32547658111673        239.64362717702531        818.47274179492661        226.96307177388459        795.30125597021856        107.81950638780334        640.82182660614512        367.77457610184524     
 
  RouteID =           15
  Route number of clients =            4
  Route length =    1328.3437626806754     
- Route demmand =          203
+ Route demand =          203
  Sequence =           69          16          55          76
  Visit points =    335.62909766416419        37.298858541245259        323.52479055477465        28.997947979093741        324.47240249180834        44.042419257257841        328.56471836975788        109.16767489926714     
 
  RouteID =           16
  Route number of clients =            3
  Route length =    986.54309817687727     
- Route demmand =          203
+ Route demand =          203
  Sequence =           59          82          63
  Visit points =    694.99374688276350        425.96964068622475        715.56971841020368        360.39114634045876        648.92343764554971        367.70409931089279     
 
  RouteID =           17
  Route number of clients =            4
  Route length =    851.89341835077084     
- Route demmand =          200
+ Route demand =          200
  Sequence =            3          77          88          40
  Visit points =    644.25839641912535        500.60413109788220        677.83369506916370        410.86596319845785        666.73612050080919        423.01733648707318        617.19786618563353        477.25962308243248     
 
  RouteID =           18
  Route number of clients =            3
  Route length =    1434.6622971015811     
- Route demmand =          201
+ Route demand =          201
  Sequence =           54          70           1
  Visit points =    245.36524236299297        108.47866713760247        73.418480844975406        87.859158195880127        132.66301553054669        184.86659909669464     
 
  RouteID =           19
  Route number of clients =            2
  Route length =    514.03879693572912     
- Route demmand =          172
+ Route demand =          172
  Sequence =            8          17
  Visit points =    603.71544544023925        616.50324320799041        571.62255420893041        596.11937314055785     
 
  RouteID =           20
  Route number of clients =            3
  Route length =    571.18117391019859     
- Route demmand =          190
+ Route demand =          190
  Sequence =           23          61         100
  Visit points =    546.47298231352704        797.08602114635084        625.68876844402632        783.06382856119546        604.28438287891777        763.76899144936567     
 
  RouteID =           21
  Route number of clients =            3
  Route length =    870.10339124876532     
- Route demmand =          206
+ Route demand =          206
  Sequence =           60          67          44
  Visit points =    707.79473452372179        423.80053251816560        707.37764415109268        423.99889596676672        609.93589462307989        470.34108639485623     
 
  RouteID =           22
  Route number of clients =            3
  Route length =    736.59684393081704     
- Route demmand =          191
+ Route demand =          191
  Sequence =           35          46          31
  Visit points =    136.24143272768259        562.51116383155977        154.72171770664139        652.78703655695369        126.24159176680675        777.87231469680091     
 
  RouteID =           23
  Route number of clients =            3
  Route length =    1036.8567093450413     
- Route demmand =          206
+ Route demand =          206
  Sequence =           52          91          50
  Visit points =    826.48741144761152        897.35369922024859        748.81806114687845        882.81499799567428        460.08996728670473        809.69540937900933     
 
  RouteID =           24
  Route number of clients =            4
  Route length =    1166.5316755342790     
- Route demmand =          196
+ Route demand =          196
  Sequence =           68          90          84          66
  Visit points =    268.58554065103107        139.17972836807147        301.31717394020569        121.46000441439470        301.93190346577791        126.93825262956392        307.73477542525353        178.65334365882933     
 
  RouteID =           25
  Route number of clients =            3
  Route length =    1147.2636751637099     
- Route demmand =          190
+ Route demand =          190
  Sequence =           81          51          83
  Visit points =    741.49240550875766        962.14256325160704        859.03629827249495        961.66752260078886        853.60048062119381        956.28336246871538     
 
  RouteID =           26
  Route number of clients =            3
  Route length =    886.42041384745448     
- Route demmand =          197
+ Route demand =          197
  Sequence =           27          97          19
  Visit points =    764.35155361592206        791.80844206884967        670.65034967268878        850.93421444586556        580.36010489740124        856.44071110511447     
 
