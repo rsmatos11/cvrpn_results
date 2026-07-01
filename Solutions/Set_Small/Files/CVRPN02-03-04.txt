@@ -1,0 +1,9 @@
+ nroutes = 1
+ 
+ RouteID =            1
+ Route number of clients =            3
+ Route length =    2.1335502242849893     
+ Route demand =           20
+ Sequence =            3           2           1
+ Visit points =   0.43869791574572053       0.39587121458614438       0.10797989283799483       0.41805991104679086      -0.45666353959508837       0.45589050729333414     
+
