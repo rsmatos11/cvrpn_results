@@ -1,6 +1,6 @@
 module solution
 
-  use instance, only: instance_type
+  use Instances, only: instance_type
   
   implicit none
 

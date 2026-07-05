@@ -1,6 +1,6 @@
 program master
 
-  use instance, only: instance_type,CreateInstance,DeleteInstance
+  use Instances, only: instance_type,CreateInstance,DeleteInstance
   use solution, only: solution_type,CreateSolution,DeleteSolution,CopySolution,drawsol
   use statistics, only: statistics_type,CreateStatistics,CleanStatistics
   use dijkstra, only: DijkstraRoute
@@ -44,7 +44,7 @@ program master
   call get_command_argument(1,arg_filename)
   filename = trim(arg_filename)
 
-  if (debug) write(*,*) 'Instance: ',trim(filename)
+  if (debug) write(*,*) 'Instances: ',trim(filename)
 
   !----------------------------------------------------
   ptype  = 'N'        
@@ -58,7 +58,7 @@ program master
   norder = 4           ! Order of neighborhoods when applying the GVNS algorithm
   qmax   = 3           ! Maximum value for Q parameter (used in the method, e.g., shaking size)
   flip   = .false.     ! Boolean flag to activate the "flip" mechanism in the algorithm
-  tlim   = 10.0d0      ! Time limit in seconds for solving each instance
+  tlim   = 10.0d0      ! Time limit in seconds for solving each Instances
   !------------------------------------------------------
   nrun   = 10          ! Number of independent GVNS algorithm executions
   !------------------------------------------------------
@@ -71,7 +71,7 @@ program master
   call CreateSolution(inst,solcvrpnbest)
   call CreateStatistics(stat)
 
-  write(*,*) 'Instance: ',trim(filename)
+  write(*,*) 'Instances: ',trim(filename)
   write(*,*) 'Number of clients = ',inst%nclients
   write(*,*) 'Maximum vehicle capacity: ',int(inst%maxcap)
   !write(*,*) 'scalefactor = ',inst%scalefactor

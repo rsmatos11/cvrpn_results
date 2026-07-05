@@ -1,6 +1,6 @@
 module blockcoordinatedescent
 
-  use instance, only: instance_type
+  use Instances, only: instance_type
   use solution, only: solution_type
   use statistics, only: statistics_type
     

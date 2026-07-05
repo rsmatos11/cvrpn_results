@@ -38,8 +38,8 @@ if use_initial_solution and use_fixed_initial_routes:
 # Check command-line arguments
 #
 # Usage:
-#   python cvrpn_models_cplex.py instance.dat
-#   python cvrpn_models_cplex.py instance.dat initial_solution.txt
+#   python cvrpn_models_cplex.py Instances.dat
+#   python cvrpn_models_cplex.py Instances.dat initial_solution.txt
 # ----------------------------------------------------------
 
 if len(sys.argv) < 2:
@@ -48,17 +48,17 @@ if len(sys.argv) < 2:
     print("  python cvrpn_models_cplex.py instance_file.dat initial_solution.txt")
     sys.exit(1)
 
-# Store the instance filename
+# Store the Instances filename
 filename = sys.argv[1]
 print(f"Reading data from file: {filename}")
 
-# Base instance name without file extension
+# Base Instances name without file extension
 name_inst = os.path.splitext(os.path.basename(filename))[0]
 
 # Optional initial solution file (.txt)
 initial_solution_path = sys.argv[2] if len(sys.argv) >= 3 else None
 
-#================= INSTANCE DATA LOADING =================#
+#================= Instances DATA LOADING =================#
 def load_dat(filename,variables_needed):
     with open(filename,'r') as file:
         content = file.read().replace('{', '[').replace('}', ']').replace(';', '')
@@ -79,18 +79,18 @@ def load_dat(filename,variables_needed):
 # Variables required for the CVRPN model
 var_cvrpn = ['m','maxcap','dem','depot','scalefactor','n','h','U','xp','yp']
 
-# Load data from the .dat instance file
+# Load data from the .dat Instances file
 data = load_dat(filename,var_cvrpn)
 
-# If the instance was not scaled, assume scalefactor = 1.0
+# If the Instances was not scaled, assume scalefactor = 1.0
 data.setdefault('scalefactor',1.0)
 
 # Check if any required variable is missing
 missing_vars = [var for var in var_cvrpn if var not in data]
 if missing_vars:
-    raise ValueError(f"Missing variables in instance file: {', '.join(missing_vars)}")
+    raise ValueError(f"Missing variables in Instances file: {', '.join(missing_vars)}")
 
-#================= ASSIGNMENT OF INSTANCE DATA =================#
+#================= ASSIGNMENT OF Instances DATA =================#
 # Number of clients (polygons)
 m = data['m']
 # Vehicle capacity
@@ -404,7 +404,7 @@ if solution and solution.objective_value is not None:
     nroutes = sum(1 for j in range(1,m+1) if x[0,j].solution_value > 0.5)
     print(f"Number of routes: {nroutes}")
 
-    print("\n2. Instance data:\n")
+    print("\n2. Instances data:\n")
     print(f"Total number of variables: {mdl.number_of_variables}")
     print(f"Binary variables: {mdl.number_of_binary_variables}")
     print(f"Integer variables: {mdl.number_of_integer_variables}")

@@ -1,6 +1,6 @@
 module metaheuristics
 
-  use instance, only: instance_type
+  use Instances, only: instance_type
   use solution, only: solution_type,CreateSolution,DeleteSolution,CopySolution
   use statistics, only: statistics_type,hlenmax
   use neighborhoods, only: Shake,Neighbor
