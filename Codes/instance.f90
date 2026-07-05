@@ -1,4 +1,4 @@
-module Instances
+module instance
 
   implicit none
 
@@ -142,4 +142,4 @@ contains
 
   end subroutine DeleteInstance
   
-end module Instances
+end module instance
